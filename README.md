@@ -25,7 +25,8 @@ Deployment: Local, Web
 
  #code
 
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -72,9 +73,9 @@ Deployment: Local, Web
   </div>
 
   <!-- Watson Assistant Web Chat Script -->
- <script>
+<script>
   window.watsonAssistantChatOptions = {
-    integrationID: "2fd07d2d-6a10-424d-8b9a-1be9d657102b", // The ID of this integration.
+    integrationID: "bac68eb0-524f-48b7-b7d8-fb07a7f54ea6", // The ID of this integration.
     region: "au-syd", // The region your integration is hosted in.
     serviceInstanceID: "579706c6-5aab-4f03-97a4-e5059fa29ab4", // The ID of your service instance.
     onLoad: async (instance) => { await instance.render(); }
@@ -84,6 +85,7 @@ Deployment: Local, Web
     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
     document.head.appendChild(t);
   });
+</script>
 </script>
 </body>
 </html>
